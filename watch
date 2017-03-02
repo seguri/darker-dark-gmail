@@ -1,0 +1,2 @@
+#!/bin/sh
+sass --no-cache --sourcemap=none --style=compressed --watch style.sass:style.css
