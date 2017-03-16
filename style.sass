@@ -1,5 +1,9 @@
-$background-color: #111
+$primary-background-color: #111
 $primary-color: #999
+$button-background-color: #333
+$button-color: #A2A2A2
+$button-hover-background-color: #444
+$button-hover-color: #D8D8D8
 
 // ---------------------------------------------------------------------------
 // Loading
@@ -7,7 +11,7 @@ $primary-color: #999
 
 #loading
     color: $primary-color
-    background: $background-color
+    background: $primary-background-color
 
 #lpt
     background-color: #2E2E2E
@@ -15,7 +19,7 @@ $primary-color: #999
 
 #stb
     color: $primary-color
-    background: $background-color
+    background: $primary-background-color
 
 
 // ---------------------------------------------------------------------------
@@ -24,19 +28,19 @@ $primary-color: #999
 
 // Compose button
 div.T-I-KE
-    color: #A2A2A2
-    background: #2E2E2E
+    color: $button-color
+    background: $button-background-color
 
     // Hover
     &.T-I-JW
-        color: #D8D8D8
-        background: #333333
-        border: 1px solid #333333
+        color: $button-hover-color
+        background: $button-hover-background-color
+        border: 1px solid $button-hover-background-color
 
 // Search button
 #gbqfb
-    color: #D8D8D8
-    background: #333333
+    color: $button-hover-color
+    background: $button-hover-background-color
 
 
 // ---------------------------------------------------------------------------
@@ -46,13 +50,13 @@ div.T-I-KE
 // Thread
 div.ads.adf,
 div.G2,
-    background-color: $background-color !important
+    background-color: $primary-background-color !important
 div.g6
     color: $primary-color
 
 // Background
 .iY .Bu
-    background-color: $background-color
+    background-color: $primary-background-color
 
 // Title, From, Email, To, Date, Text
 h2.hP,
@@ -61,7 +65,18 @@ span.go,
 span.g2,
 span.g3,
 div.gs
-    color: #A2A2A2
+    color: $button-color
+
+// Reply all
+div.T-I-ax7
+    color: $button-color
+    background: $button-background-color
+
+    // Hover
+    &.T-I-JW,
+    &.T-I-Zf-aw2.T-I-JW
+        background: $button-hover-background-color
+        border: 1px solid $button-hover-background-color
 
 
 // ---------------------------------------------------------------------------
@@ -70,7 +85,7 @@ div.gs
 
 // Bar
 div.h9
-    background-color: $background-color
+    background-color: $primary-background-color
     border: 1px solid $primary-color
 
 // Text
@@ -79,14 +94,40 @@ div.ado
 
 
 // ---------------------------------------------------------------------------
+// Calendars
+// ---------------------------------------------------------------------------
+
+// Number of the day on the left
+td.aRi
+    background-color: $primary-background-color
+
+// Event title (left), Agenda (right)
+div.aRo,
+.aQ6>.aQ4,
+.aQ6>.aQ5
+    color: $primary-color
+
+// Yes - No - Maybe
+div.aQ9
+    color: $button-color
+    background: $button-background-color
+    border: 1px solid $button-background-color
+    border-left: 1px solid black
+
+    &:hover
+        color: $button-hover-color
+        background: $button-hover-background-color
+        border: 1px solid $button-hover-background-color
+
+
+// ---------------------------------------------------------------------------
 // Footer
 // ---------------------------------------------------------------------------
 
-// Disk usage, Disk usage management, Terms and privacy, Last activity, Last activity details
+// Disk usage, Disk usage management link, Terms and privacy, Last activity, Last activity details
 div.md.mj,
 div.aeW a.l8,
-div.ma,
 div.ma a.l9,
-div.l6,
-div.l6 span.l8.ou
+.iY .l6,
+.iY .l8
     color: $primary-color
